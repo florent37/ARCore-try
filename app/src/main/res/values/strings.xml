@@ -15,5 +15,39 @@
    limitations under the License.
 -->
 <resources>
-    <string name="app_name">HelloAR Java</string>
+    <string name="app_name">HelloAR LM</string>
+
+
+
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+
+    <string name="abbreviation_north">N</string>
+    <string name="abbreviation_south">S</string>
+    <string name="abbreviation_east">E</string>
+    <string name="abbreviation_west">W</string>
+
+
+    <string-array name="direction_abbreviations">
+        <item>N</item>
+        <item>NNE</item>
+        <item>NE</item>
+        <item>ENE</item>
+        <item>E</item>
+        <item>ESE</item>
+        <item>SE</item>
+        <item>SSE</item>
+        <item>S</item>
+        <item>SSW</item>
+        <item>SW</item>
+        <item>WSW</item>
+        <item>W</item>
+        <item>WNW</item>
+        <item>NW</item>
+        <item>NNW</item>
+    </string-array>
+
+    <string name="place_text_format">%1$s (%2$s km)</string>
 </resources>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ARCore-try.iml" filepath="$PROJECT_DIR$/ARCore-try.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Google-ARCore-Playground.iml" filepath="$PROJECT_DIR$/Google-ARCore-Playground.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

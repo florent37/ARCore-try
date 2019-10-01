@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.2"
 
     defaultConfig {
-        applicationId "com.github.florent37.google.arcore"
+        applicationId "com.arcore.example"
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 1
@@ -36,7 +36,7 @@ repositories {
 
 dependencies {
     compile (name: 'arcore_client', ext: 'aar')
-    compile (name: 'obj-0.2.1', ext: 'jar')
+    compile (name: 'obj-0.3.0', ext: 'jar')
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
 

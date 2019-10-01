@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.ar.core.examples.java.helloar"
+    package="com.arcore.example"
     android:versionCode="0"
     android:versionName="0" >
 
@@ -23,6 +23,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application

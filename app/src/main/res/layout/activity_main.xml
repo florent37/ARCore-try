@@ -14,11 +14,9 @@
    limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.google.ar.core.examples.java.helloar.MainActivity">
+    android:layout_height="match_parent">
+
 
     <android.opengl.GLSurfaceView
         android:id="@+id/surfaceview"
@@ -30,31 +28,34 @@
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:text="test"
+        android:layout_above="@+id/configLocal"
         android:alpha="0"
         android:background="#3E3E3E"
-        android:textColor="@android:color/white"
-        android:layout_above="@+id/configLocal"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="test"
+        android:textColor="@android:color/white" />
 
     <FrameLayout
         android:id="@+id/configLocal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottomNav">
+        android:layout_alignParentBottom="true"></FrameLayout>
 
-    </FrameLayout>
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        app:menu="@menu/bottom"
-        app:itemTextColor="@color/menu_selector"
-        app:itemIconTint="@color/menu_selector"
+    <com.arcore.example.compass.CompassViewLM
+        android:id="@+id/compass_view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
 
+    <!--<com.arcore.example.compass.CompassViewTest-->
+        <!--android:id="@+id/compass_view_test"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:padding="15dp"-->
+        <!--android:src="@drawable/red_arrow" />-->
 </RelativeLayout>
